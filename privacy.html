@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Политика конфиденциальности — Lumo</title>
+<meta name="description" content="Какие данные обрабатывает мессенджер Lumo, зачем, где они хранятся и как их удалить.">
+<meta name="theme-color" content="#0B0F1A">
+<link rel="icon" type="image/png" href="img/icon.png">
+<style>
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(fonts/Inter-Regular.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(fonts/Inter-SemiBold.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:700;font-display:swap;src:url(fonts/Inter-Bold.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:800;font-display:swap;src:url(fonts/Inter-ExtraBold.woff2) format("woff2")}
+:root{--bg:#0B0F1A;--surface:#121726;--surface-2:#1B2235;--border:#242D41;--text:#F5F6FC;--muted:#939DB4;--lilac:#C779FF;
+  --grad:linear-gradient(90deg,#B44CFF 0%,#E77BFF 53%,#3EF0D2 100%)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--lilac)}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);background:rgba(11,15,26,.75);border-bottom:1px solid rgba(36,45,65,.6)}
+.bar{max-width:1180px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:700;font-size:22px}
+.brand img{width:34px;height:34px;border-radius:10px}
+.back{margin-left:auto;color:var(--muted);text-decoration:none;font-size:14px;font-weight:600}
+.back:hover{color:var(--text)}
+.glow{position:fixed;width:520px;height:520px;border-radius:50%;filter:blur(120px);opacity:.22;background:#B44CFF;left:-200px;top:-160px;pointer-events:none}
+.layout{position:relative;max-width:1180px;margin:0 auto;padding:56px 24px 80px;display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:start}
+aside{position:sticky;top:96px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:18px 10px}
+aside b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:0 12px 8px}
+aside a{display:block;padding:7px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px;line-height:1.35}
+aside a:hover{background:var(--surface-2);color:var(--text)}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lilac)}
+h1{font-size:clamp(34px,4.6vw,52px);line-height:1.08;letter-spacing:-.03em;margin:10px 0 12px;font-weight:800}
+.date{color:var(--muted);font-size:14px;margin:0 0 28px}
+.summary{background:linear-gradient(135deg,rgba(180,76,255,.16),rgba(62,240,210,.07)),var(--surface);border:1px solid var(--border);border-radius:22px;padding:22px 24px;margin-bottom:36px}
+.summary h2{margin:0 0 10px;font-size:18px}
+.summary ul{margin:0;padding-left:20px;color:var(--muted)}
+.summary li{margin:4px 0}
+section{scroll-margin-top:96px;padding:6px 0 18px;border-top:1px solid var(--border)}
+section:first-of-type{border-top:0}
+h2{font-size:22px;letter-spacing:-.01em;margin:22px 0 10px}
+p,li{color:#C9CEDD}
+ul{padding-left:22px}
+.note{font-size:14px;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:12px 16px}
+footer{max-width:1180px;margin:0 auto;padding:28px 24px 48px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:var(--muted);text-decoration:none}
+@media (max-width:900px){.layout{grid-template-columns:1fr;gap:24px;padding-top:32px}aside{position:static}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<header>
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="img/icon.png" alt="">lumo</a>
+    <a class="back" href="index.html">← На главную</a>
+  </div>
+</header>
+
+<div class="layout">
+  <aside>
+    <b>Содержание</b>
+    <a href="#operator">1. Кто обрабатывает данные</a>
+    <a href="#data">2. Какие данные</a>
+    <a href="#purpose">3. Зачем</a>
+    <a href="#basis">4. Основания</a>
+    <a href="#transfer">5. Где хранятся и кому передаются</a>
+    <a href="#security">6. Защита</a>
+    <a href="#retention">7. Сроки хранения</a>
+    <a href="#rights">8. Ваши права</a>
+    <a href="#children">9. Дети</a>
+    <a href="#site">10. Сайт</a>
+    <a href="#changes">11. Изменения</a>
+  </aside>
+
+  <main>
+    <div class="kicker">Документ</div>
+    <h1>Политика конфиденциальности</h1>
+    <p class="date">Редакция от 25 ноября 2026 г.</p>
+
+    <div class="summary">
+      <h2>Коротко</h2>
+      <ul>
+        <li>Собираем только то, без чего мессенджер не работает.</li>
+        <li>Не продаём данные, не показываем рекламу, не ставим трекеры.</li>
+        <li>Секретные чаты зашифрованы так, что их не видим даже мы.</li>
+        <li>Аккаунт и все данные можно выгрузить или удалить в настройках.</li>
+      </ul>
+    </div>
+
+    <section id="operator">
+      <h2>1. Кто обрабатывает ваши данные</h2>
+      <p>Оператор персональных данных — Морозов Денис Дмитриевич, самозанятый (плательщик налога на профессиональный доход), ИНН 422378167081 (далее — «мы»).</p>
+      <p>Политика действует для мессенджера Lumo на Android и Windows и для сайта Lumo. Она составлена в соответствии с Федеральным законом № 152-ФЗ «О персональных данных».</p>
+      <p>Связаться с нами: <a href="mailto:dm3765180@gmail.com">dm3765180@gmail.com</a>.</p>
+    </section>
+
+    <section id="data">
+      <h2>2. Какие данные мы обрабатываем</h2>
+      <p><b>Данные аккаунта:</b> номер телефона или адрес почты (по ним вы входите), пароль — в зашифрованном виде (хеш), имя, имя пользователя (@username), «О себе», фотографии профиля, статус и обложка.</p>
+      <p><b>Ваш контент:</b> сообщения, фото, видео, файлы, голосовые сообщения и кружки, истории, стикеры, реакции, голоса в опросах, подарки.</p>
+      <p><b>Технические данные:</b> токен для push-уведомлений, список ваших устройств и сеансов, время последнего визита и статус «в сети», IP-адрес в журналах сервера.</p>
+      <p><b>Только если вы сами разрешите:</b></p>
+      <ul>
+        <li>контакты телефона — чтобы найти знакомых в Lumo;</li>
+        <li>геопозиция — когда вы отправляете её в чат или включаете «Люди рядом»;</li>
+        <li>камера и микрофон — для звонков, фото, кружков и голосовых;</li>
+        <li>активность на компьютере («Играет в…», «Слушает…») — выключается в «Конфиденциальности».</li>
+      </ul>
+      <p><b>Платежи:</b> сумма и факт оплаты. Данные банковской карты мы не получаем и не храним.</p>
+    </section>
+
+    <section id="purpose">
+      <h2>3. Зачем мы это делаем</h2>
+      <ul>
+        <li>Чтобы создать аккаунт и пускать в него только вас.</li>
+        <li>Чтобы доставлять сообщения, файлы, звонки и уведомления.</li>
+        <li>Чтобы работали поиск людей и сообществ, друзья, серверы, истории.</li>
+        <li>Чтобы оформить Lumo Premium, Люмены и подарки.</li>
+        <li>Чтобы защищать сервис от спама, взлома и злоупотреблений.</li>
+        <li>Чтобы отвечать на ваши обращения.</li>
+      </ul>
+      <p>Мы не продаём данные, не показываем рекламу и не используем сторонние счётчики и рекламные трекеры.</p>
+    </section>
+
+    <section id="basis">
+      <h2>4. Основания обработки</h2>
+      <p>Ваше согласие, которое вы даёте, отмечая пункт о принятии Политики при входе в Lumo, а также исполнение соглашения между нами — без этих данных мессенджер не может работать.</p>
+    </section>
+
+    <section id="transfer">
+      <h2>5. Где хранятся данные и кому они передаются</h2>
+      <ul>
+        <li><b>Google Firebase</b> (Google LLC, серверы за пределами России) — аккаунты, сообщения и push-уведомления. Это трансграничная передача данных; принимая Политику, вы на неё соглашаетесь.</li>
+        <li><b>Сервер Lumo</b> — файлы, фото, голосовые, резервные копии, расшифровка голосовых в текст (выполняется на нашем сервере, без третьих лиц) и сервер для звонков (TURN).</li>
+        <li><b>SMS.ru</b> — номер телефона, когда вы входите по номеру через звонок.</li>
+        <li><b>ЮKassa</b> — данные платежа при покупке Premium или Люменов.</li>
+        <li><b>MyMemory</b> — текст сообщения, когда вы нажимаете «Перевести».</li>
+        <li><b>GIPHY</b> — поисковый запрос, когда вы ищете GIF (запрос идёт через наш сервер, ваш IP-адрес GIPHY не видит).</li>
+        <li>Превью ссылок загружает наш сервер, поэтому сайт из ссылки не видит ваш IP-адрес.</li>
+      </ul>
+      <p>Контакты телефона передаются на сервер только для сопоставления и не сохраняются. Другим людям и компаниям мы передаём данные только по требованию закона.</p>
+    </section>
+
+    <section id="security">
+      <h2>6. Как мы защищаем данные</h2>
+      <p>Все соединения зашифрованы (HTTPS/TLS). Файлы чата доступны только его участникам. В секретных чатах сообщения шифруются на устройствах (сквозное шифрование X25519 + AES-256-GCM) — их не видим ни мы, ни Google. Обычные чаты сквозным шифрованием не защищены. Дополнительно можно включить код-пароль и двухэтапную проверку.</p>
+    </section>
+
+    <section id="retention">
+      <h2>7. Сколько мы храним данные</h2>
+      <ul>
+        <li>Данные аккаунта и переписку — пока существует аккаунт.</li>
+        <li>Сообщения с автоудалением — до истечения выбранного срока.</li>
+        <li>Файлы удалённых сообщений — удаляются при ночной очистке.</li>
+        <li>Резервные копии — до 7 дней.</li>
+        <li>Геопозицию в «Людях рядом» — 1 час.</li>
+        <li>Контакты телефона — не храним.</li>
+      </ul>
+      <p>После удаления аккаунта ваши данные удаляются; в резервных копиях они исчезают в течение 7 дней. Сообщения, которые вы отправили в общие чаты, могут остаться у их участников.</p>
+    </section>
+
+    <section id="rights">
+      <h2>8. Ваши права</h2>
+      <ul>
+        <li>Получить копию своих данных — «Настройки → Безопасность → Выгрузить мои данные».</li>
+        <li>Исправить данные — в профиле.</li>
+        <li>Удалить аккаунт и данные — «Настройки → Безопасность → Удалить аккаунт».</li>
+        <li>Отозвать согласие — удалив аккаунт или написав нам на почту.</li>
+        <li>Пожаловаться в Роскомнадзор, если считаете, что мы нарушаем ваши права.</li>
+      </ul>
+      <p>На письма мы отвечаем в течение 10 рабочих дней.</p>
+    </section>
+
+    <section id="children">
+      <h2>9. Дети</h2>
+      <p>Если вам меньше 14 лет, пользоваться Lumo можно только с согласия родителей или законных представителей.</p>
+    </section>
+
+    <section id="site">
+      <h2>10. Сайт</h2>
+      <p>Сайт Lumo не использует cookie, счётчики и аналитику. Файлы для скачивания отдаёт наш сервер, он видит только ваш IP-адрес.</p>
+    </section>
+
+    <section id="changes">
+      <h2>11. Изменения Политики</h2>
+      <p>Если мы изменим Политику, мы сообщим об этом в приложении. Актуальная редакция всегда доступна в «Настройки → Политика конфиденциальности» и на этой странице.</p>
+      <p class="note">Устанавливая Lumo и отмечая согласие при входе, вы подтверждаете, что прочитали и принимаете эту Политику.</p>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div>© 2026 Lumo · Сделано, чтобы быть ближе</div>
+  <a href="index.html">На главную</a>
+</footer>
+</body>
+</html>

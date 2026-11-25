@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="114" height="54" viewBox="0 0 114 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="eyes">
+<path id="Vector" d="M6 6H18V0H42V6H48V18H54V42H48V54H12V48H0V18H6V6Z" fill="#59258B"/>
+<path id="Vector_2" d="M12 6H36V12H42V24H48V42H42V48H12V42H6V18H12V6Z" fill="white"/>
+<path id="Vector_3" d="M6 30H12V42H42V48H12V42H6V30Z" fill="#E9DBFA"/>
+<path id="Vector_4" d="M78 0H102V6H108V18H114V42H108V48H102V54H72V48H66V18H72V6H78V0Z" fill="#59258B"/>
+<path id="Vector_5" d="M78 6H96V12H102V18H108V42H102V48H78V42H72V18H78V6Z" fill="white"/>
+<path id="Vector_6" d="M72 30H78V42H102V48H78V42H72V30Z" fill="#E9DBFA"/>
+<path id="Vector_7" d="M24 18H36V24H42V36H36V42H24V36H18V24H24V18Z" fill="#201B3D"/>
+<path id="Vector_8" d="M84 18H96V24H102V36H96V42H84V36H78V24H84V18Z" fill="#201B3D"/>
+<path id="Vector_9" d="M24 18H30V24H24V18Z" fill="white"/>
+<path id="Vector_10" d="M84 18H90V24H84V18Z" fill="white"/>
+</g>
+</svg>
